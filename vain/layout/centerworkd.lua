@@ -64,7 +64,7 @@ function arrange(p)
                     g.width = slaveLwid - 2 * useless_gap
 
                     local order = math.floor(i / 2)
-                    g.y = (wa.y + useless_gap) + order * (slaveLeftHeight + useless_gap)
+                    g.y = (wa.y + useless_gap) + order * slaveLeftHeight
                     g.height = slaveLeftHeight - useless_gap
 
                     if order == clientsLeft-1
@@ -77,7 +77,7 @@ function arrange(p)
                     g.width = slaveRwid - 2 * useless_gap
 
                     local order = math.floor((i-1) / 2)
-                    g.y = wa.y + useless_gap + order * (slaveRightHeight + useless_gap)
+                    g.y = wa.y + useless_gap + order * slaveRightHeight
                     g.height = slaveRightHeight - useless_gap
 
                     if order == clientsRight-1
